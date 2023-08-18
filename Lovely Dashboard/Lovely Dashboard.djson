@@ -12,7 +12,7 @@
   "ForegroundOpacity": 100.0,
   "GridSize": 10,
   "HideLabels": true,
-  "Id": "3f88e0f2-8e1f-402d-bfbe-b089c16c16ff",
+  "Id": "4fc72701-83a8-4442-bc61-0897d38bea80",
   "Images": [
     {
       "Extension": ".png",
@@ -506,7 +506,7 @@
           "Name": "Analytics",
           "StartAddress": "",
           "Top": 0.0,
-          "Visible": true,
+          "Visible": false,
           "Width": 850.0
         },
         {
@@ -577,7 +577,7 @@
           "TextWrapping": 0,
           "Top": 453.0,
           "VerticalAlignment": 1,
-          "Visible": true,
+          "Visible": false,
           "Width": 690.0
         },
         {
@@ -596,7 +596,7 @@
           "TextWrapping": 0,
           "Top": 423.0,
           "VerticalAlignment": 2,
-          "Visible": true,
+          "Visible": false,
           "Width": 690.0
         },
         {
@@ -614,7 +614,7 @@
           "TextColor": "#FFFFFFFF",
           "Top": 395.0,
           "VerticalAlignment": 1,
-          "Visible": true,
+          "Visible": false,
           "Width": 260.0
         },
         {
@@ -624,7 +624,7 @@
             "Text": {
               "FormatString": "",
               "Formula": {
-                "Expression": "'NEW VERSION AVAILABLE: ' + downloadstring(86400, 'https://raw.githubusercontent.com/cdemetriadis/lovely-dashboard/main/version.txt') + ' - Visit j76.me/Update'"
+                "Expression": "'NEW VERSION AVAILABLE: ' + downloadstring(86400, 'https://raw.githubusercontent.com/cdemetriadis/lovely-dashboard/main/version.txt')"
               },
               "Mode": 2,
               "TargetPropertyName": "Text"
@@ -681,7 +681,7 @@
           "Left": 305.0,
           "Name": "LSR Icon",
           "Top": 70.0,
-          "Visible": true,
+          "Visible": false,
           "Width": 240.0
         },
         {
@@ -708,7 +708,7 @@
               "Left": 405.0,
               "Name": "ImageItem2",
               "Top": 350.0,
-              "Visible": true,
+              "Visible": false,
               "Width": 40.0
             },
             {
@@ -765,7 +765,7 @@
               "Left": 405.0,
               "Name": "ImageItem2",
               "Top": 350.0,
-              "Visible": true,
+              "Visible": false,
               "Width": 40.0
             },
             {
@@ -830,7 +830,7 @@
               "Height": 210.0,
               "HorizontalAlignment": 1,
               "IsTextItem": true,
-              "Left": -19.0,
+              "Left": 6.0,
               "Name": "Number",
               "Text": "000",
               "TextColor": "#FF2B98FB",
@@ -842,11 +842,11 @@
           ],
           "Group": true,
           "Height": 325.0,
-          "Left": -19.0,
+          "Left": 6.0,
           "Name": "User name",
           "Top": 65.0,
           "Visible": false,
-          "Width": 865.0
+          "Width": 840.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
@@ -1174,7 +1174,7 @@
           "Name": "Analytics",
           "StartAddress": "",
           "Top": 0.0,
-          "Visible": true,
+          "Visible": false,
           "Width": 850.0
         },
         {
@@ -1504,7 +1504,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Gold'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Gold'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1546,7 +1546,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Gold'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Gold'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1588,7 +1588,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Gold'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Gold'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1630,7 +1630,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Gold'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Gold'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1672,7 +1672,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Gold'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Gold'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1714,7 +1714,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Red'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Red'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1756,7 +1756,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Red'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Red'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1798,7 +1798,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Red'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Red'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1840,7 +1840,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '#FF0DC5FF' : 'Red'",
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Red'",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1878,8 +1878,16 @@
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-                  "BackgroundColor": "#FF0DC5FF",
+                  "BackgroundColor": "Blue",
                   "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Blue'",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
                     "BlinkEnabled": {
                       "Formula": {
                         "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '1' : '0'",
@@ -1912,8 +1920,16 @@
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-                  "BackgroundColor": "#FF0DC5FF",
+                  "BackgroundColor": "Blue",
                   "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Blue'",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
                     "BlinkEnabled": {
                       "Formula": {
                         "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '1' : '0'",
@@ -1946,8 +1962,16 @@
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-                  "BackgroundColor": "#FF0DC5FF",
+                  "BackgroundColor": "Blue",
                   "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Blue'",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
                     "BlinkEnabled": {
                       "Formula": {
                         "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '1' : '0'",
@@ -1980,8 +2004,16 @@
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-                  "BackgroundColor": "#FF0DC5FF",
+                  "BackgroundColor": "Blue",
                   "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Blue'",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
                     "BlinkEnabled": {
                       "Formula": {
                         "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '1' : '0'",
@@ -2014,8 +2046,16 @@
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-                  "BackgroundColor": "#FF0DC5FF",
+                  "BackgroundColor": "Blue",
                   "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? 'BlueViolet' : 'Blue'",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
                     "BlinkEnabled": {
                       "Formula": {
                         "Expression": "return ( $prop('CarSettings_RPMRedLineReached') ) ? '1' : '0'",
@@ -2281,7 +2321,7 @@
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "Top": 20.0,
-          "Visible": true,
+          "Visible": false,
           "Width": 286.0
         },
         {
@@ -2300,6 +2340,40 @@
           "Top": 50.0,
           "Visible": true,
           "Width": 814.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#96FF0000",
+          "Bindings": {
+            "BackgroundColor": {
+              "Formula": {
+                "Expression": "if ([DataCorePlugin.GameData.ABSActive], '#FFFFE04C', '#96FF0000')"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "BackgroundColor"
+            },
+            "Visible": {
+              "Formula": {
+                "Expression": "[ABSActive] or [Rpms] > [MaxRpm] * 0.98"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Font": "Segoe UI",
+          "FontSize": 50.0,
+          "Height": 720.0,
+          "HorizontalAlignment": 0,
+          "IsTextItem": true,
+          "Left": 0.0,
+          "Name": "RPM RED SCREEN",
+          "Opacity": 50.0,
+          "Text": "",
+          "TextColor": "#FFFFFFFF",
+          "Top": 0.0,
+          "VerticalAlignment": 0,
+          "Visible": true,
+          "Width": 1280.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",

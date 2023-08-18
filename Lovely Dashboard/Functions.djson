@@ -12,7 +12,7 @@
   "ForegroundOpacity": 100.0,
   "GridSize": 10,
   "HideLabels": true,
-  "Id": "0bb7cfb7-a2f8-4556-b634-828890144aeb",
+  "Id": "71433209-ea67-4d25-9c14-3bd6c1359f8a",
   "Images": [
     {
       "Extension": ".png",
@@ -1183,7 +1183,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "if ( ld_changed(800, $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount')) ) {\r\n\treturn '#FF7FFF00'\r\n} else {\r\n\treturn '#FF262626'\r\n}",
+                        "Expression": "const json_settings = readtextfile('./JavascriptExtensions/Lovely-Dashboard_settings.json')\r\nconst settings = JSON.parse(json_settings);\r\n\r\nif ( !settings ) {\r\n\talertIncidentDelay = 5000\r\n} else {\r\n\talertIncidentDelay = settings.alertIncidentDelay\r\n}\r\n\r\nif ( ld_changed(alertIncidentDelay, $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount')) ) {\r\n\treturn 'Red'\r\n} else {\r\n\treturn '#FF262626'\r\n}",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1191,7 +1191,7 @@
                     },
                     "BlinkEnabled": {
                       "Formula": {
-                        "Expression": "return ( ld_changed(800, $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount')) ) ? 1 : 0\r\n",
+                        "Expression": "const json_settings = readtextfile('./JavascriptExtensions/Lovely-Dashboard_settings.json')\r\nconst settings = JSON.parse(json_settings);\r\n\r\nif ( !settings ) {\r\n\talertIncidentDelay = 5000\r\n} else {\r\n\talertIncidentDelay = settings.alertIncidentDelay\r\n}\r\n\r\nreturn ld_changed(alertIncidentDelay, $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount')) ) ? 1 : 0",
                         "Interpreter": 1
                       },
                       "Mode": 2,
@@ -1317,7 +1317,7 @@
                   "Left": 91.0,
                   "Name": "TextItem3",
                   "Text": "0x",
-                  "TextColor": "#FF00FF00",
+                  "TextColor": "#FF00FFFF",
                   "Top": 15.0,
                   "VerticalAlignment": 1,
                   "Visible": true,
@@ -1641,5 +1641,8 @@
   "ShowForeground": true,
   "ShowOnScreenControls": true,
   "SnapToGrid": false,
+  "Variables": {
+    "DashboardVariables": []
+  },
   "Version": 2
 }
